@@ -1,0 +1,7 @@
+name: web-svelte-patterns-agent-skill
+version: 1.0.0
+author: Agent-Rules-Ecosystem
+description: "Svelte & SvelteKit architectural pattern skill."
+compatible_rules:
+  - web-agent-rules
+dependencies: []
