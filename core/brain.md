@@ -1,28 +1,14 @@
-# Motor de Decisiones — Svelte/SvelteKit
+# 🧠 Engine de Decisiones Svelte & SvelteKit (Svelte Brain)
 
-## Flujo de Operación
+## Matriz de Selección Reactiva (Svelte 5 vs Legacy)
 
-```mermaid
-graph TD
-    A["Trigger detectado (svelte)"] --> B["svelte:audit — Escanear proyecto"]
-    B --> C{¿Hallazgos?}
-    C -- No --> D["✅ Dominio conforme — Sin acción requerida"]
-    C -- Sí --> E["Reporte de hallazgos: Alta / Media / Baja"]
-    E --> F["svelte:fix — Aplicar remediaciones"]
-    F --> G["Re-auditoría automática para confirmar 0 regresiones"]
-```
+1. **Usar Svelte 5 Runes (`$state`, `$derived`, `$effect`) si**:
+   - Se desarrolla un proyecto nuevo o componente moderno en Svelte 5+.
+   - Se requiere compartir estado reactivo en archivos `.svelte.ts` / `.svelte.js` fuera de la jerarquía de componentes.
 
-## Matriz de Decisión
+2. **Usar Stores Reactivos (`writable`, `derived`, `readable`) si**:
+   - Se requiere retrocompatibilidad con bibliotecas o proyectos existentes de Svelte 3/4.
+   - El estado debe ser consumido desde módulos JS puros sin soporte de compilador Svelte 5.
 
-| Situación detectada | Acción del agente |
-|---|---|
-| Antipatrón crítico del dominio | Reportar como Alta prioridad y proponer fix inmediato |
-| Violación de convenciones de nombre | Reportar como Media prioridad |
-| Oportunidad de mejora opcional | Reportar como Baja prioridad |
-| Dominio no aplicable al proyecto | Omitir y notificar al usuario |
-
-## Criterio de Re-auditoría
-
-Después de ejecutar `$svelte:fix`, re-ejecutar `$svelte:audit` automáticamente para verificar que:
-- Los hallazgos de Alta prioridad fueron resueltos.
-- No se introdujeron nuevas violaciones al aplicar el fix.
+3. **Usar Form Actions en SvelteKit si**:
+   - Se implementan mutaciones de datos (formularios, login, CRUD) para aprovechar el manejo de servidor sin depender de endpoints REST manuales.

@@ -1,4 +1,2 @@
-# Flutter Agent Rules adapter
-
-Read and follow `.agents/AGENTS.md` before responding or editing.
-Project state lives in `overview/`. Do not duplicate rules here.
+# Claude Adapter - Svelte Skill
+Import `.skill/web-svelte-agent-skill/AGENTS.md` for Svelte 5 and SvelteKit architecture tasks.

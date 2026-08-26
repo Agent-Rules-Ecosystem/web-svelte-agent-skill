@@ -1,15 +1,11 @@
-# Mapa de Rutas — Svelte/SvelteKit
+# 🗺️ Mapa de Rutas Svelte & SvelteKit
 
-## Rutas de la Skill (en proyecto huésped)
+## Proyectos SvelteKit
+- `src/routes/`: Estructura de rutas basadas en sistema de carpetas (`+page.svelte`, `+page.server.ts`, `+layout.svelte`).
+- `src/lib/`: Módulos, utilidades y componentes UI compartidos accesibles mediante `$lib`.
+- `src/lib/components/`: Componentes `.svelte` reutilizables.
+- `src/lib/server/`: Código exclusivo de servidor (Base de datos, tokens, secretos).
 
-| Recurso | Ruta | Carga |
-|---|---|---|
-| Directiva principal | `.skill/web-svelte-patterns-agent-skill/SKILL.md` | Al activar la skill |
-| Comandos | `.skill/web-svelte-patterns-agent-skill/core/commands.md` | Al activar la skill |
-| Motor de decisiones | `.skill/web-svelte-patterns-agent-skill/core/brain.md` | Durante auditoría |
-| Guías de dominio | `.skill/web-svelte-patterns-agent-skill/knowledge/` | Bajo demanda por tema |
-| Plantillas y snippets | `.skill/web-svelte-patterns-agent-skill/resources/` | Al aplicar remediaciones |
-
-## Rutas del Proyecto Huésped Monitoreadas
-
-> Las rutas específicas dependen del proyecto destino. El agente las descubre dinámicamente durante `$svelte:audit`.
+## Arquitectura Limpia (`web-agent-rules` Integration)
+- `src/lib/domain/`: Entidades y Value Objects de negocio en TypeScript estricto.
+- `src/lib/use_cases/`: Lógica de aplicación pura desvinculada del framework.
