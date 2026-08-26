@@ -1,6 +1,6 @@
 ---
-name: web-svelte-patterns-agent-skill
-description: Patrones arquitectónicos de Svelte/SvelteKit: stores, SSR/SSG, layout system, routing y buenas prácticas de componentes.
+name: web-svelte-agent-skill
+description: Habilidad integral de Svelte y SvelteKit: Svelte 5 Runes, Stores, SSR/SSG, Form Actions, animaciones nativas y Clean Architecture.
 ---
 
 # WebSveltePatterns Skill Matrix
@@ -30,7 +30,7 @@ graph LR
 
 Al ejecutar esta skill (mediante `$svelte` o `$svelte:audit`), es **obligatorio crear o actualizar su reporte activo** dentro del proyecto cliente en la ruta:
 
-`overview/work/skill/web-svelte-patterns.md`
+`overview/work/skill/web-svelte.md`
 
 ### Estructura Requerida del Reporte:
 
