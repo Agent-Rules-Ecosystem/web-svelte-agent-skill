@@ -39,10 +39,22 @@ graph LR
 
 ---
 
-## 📦 Instalación como Submódulo
+## ⚡ Quick Start
 
+**1. Instala la skill como submódulo**
 ```bash
-git submodule add https://github.com/Agent-Rules-Ecosystem/web-svelte-agent-skill.git .skill/web-svelte-agent-skill
+git submodule add git@github.com:Agent-Rules-Ecosystem/web-svelte-agent-skill.git .skill/web-svelte-agent-skill
 ```
 
-Activar con: `$svelte`
+**2. Activa la skill con `$boot`**
+```text
+$boot
+```
+
+**3. Ejecuta el primer comando de la skill**
+```text
+$work agregar página de Dashboard con Svelte stores
+```
+
+---
+
