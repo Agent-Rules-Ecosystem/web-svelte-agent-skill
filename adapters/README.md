@@ -9,4 +9,4 @@ Copiar solo adaptador que reconozca agente:
 | Gemini / Antigravity | `GEMINI.md` | `GEMINI.md` |
 | Cursor | `cursor-rule.mdc` | `.cursor/rules/web-svelte-agent-skill.mdc` |
 
-Cada archivo solo direcciona a `.agents/AGENTS.md`.
+Cada archivo solo direcciona a `.skill/web-svelte-agent-skill/AGENTS.md`.

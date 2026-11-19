@@ -1,7 +1,7 @@
 ---
-description: Web Svelte Agent Skill bootstrap
-alwaysApply: true
+description: Web Svelte 5 Runes & SvelteKit skill ($svelte)
+globs: ["**/*.svelte", "**/*.svelte.ts", "**/*.svelte.js", "**/+page*.ts"]
+alwaysApply: false
 ---
 
-Read and follow `.agents/AGENTS.md` before responding or editing.
-Project state lives in `overview/`. Do not duplicate rules here.
+Read and follow `.skill/web-svelte-agent-skill/AGENTS.md` and `.skill/web-svelte-agent-skill/SKILL.md`.

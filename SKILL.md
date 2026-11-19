@@ -3,7 +3,7 @@ name: web-svelte-agent-skill
 description: Habilidad integral de Svelte y SvelteKit: Svelte 5 Runes, Stores, SSR/SSG, Form Actions, animaciones nativas y Clean Architecture.
 ---
 
-# WebSveltePatterns Skill Matrix
+# WebSvelte Skill Matrix
 
 ## Capacidades de la Habilidad
 
@@ -35,9 +35,9 @@ Al ejecutar esta skill (mediante `$svelte` o `$svelte:audit`), es **obligatorio 
 ### Estructura Requerida del Reporte:
 
 ```markdown
-# 📋 Registro Activo de Tareas — Web Svelte Patterns Agent Skill
+# 📋 Registro Activo de Tareas — Web Svelte Agent Skill
 
-> **Generado por**: `web-svelte-patterns-agent-skill` (`$svelte:audit`)  
+> **Generado por**: `web-svelte-agent-skill` (`$svelte:audit`)  
 > **Última actualización**: YYYY-MM-DD  
 
 ## 🎯 Tareas Pendientes Accionables
